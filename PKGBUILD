@@ -15,9 +15,9 @@ conflicts=(${pkgname%-git})
 provides=(${pkgname%-git})
 optdepends=('kdeconnect-git: sharing to smartphone via KDE Connect' 'telegram-desktop: sharing via Telegram'
             'bluedevil-git: sharing via Bluetooth')
-            groups=(kf5-git)
-            source=("git+https://github.com/KDE/${pkgname%-git}.git")
-            sha256sums=('SKIP')
+groups=(kf5-git)
+source=("git+https://github.com/KDE/${pkgname%-git}.git")
+sha256sums=('SKIP')
 
 pkgver() {
                   cd ${pkgname%-git}
